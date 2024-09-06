@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "4a92220f-8978-4e1d-922b-f095e7b19ac1",
+		"name": "backen dti ulbi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31681870"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6ImIyZjgwYzYzNDYwMGVkMTMwNzIxMDFhOGI0MjIwNDQzNDMzZGIyODIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyMzk3MTM3NTU0MDItNGhyMmN2YTM3N200M3JzcXMyZGswYzdmN2NrdGZlcGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyMzk3MTM3NTU0MDItNGhyMmN2YTM3N200M3JzcXMyZGswYzdmN2NrdGZlcGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDg4NTI0NTg3NjI5MTM4MjY5MDciLCJlbWFpbCI6ImF5YWxhcmlma2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5iZiI6MTcyNTQyMjU2MSwibmFtZSI6ImFobWFkIHJpZmtpIGF5YWxhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0tPT3VoYS1mdkgzbnE1TDhteHF5VkpMSzZiT1N1cV9BRkdFb3Uyd0FTUFBjekg3djBFPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6ImFobWFkIHJpZmtpIiwiZmFtaWx5X25hbWUiOiJheWFsYSIsImlhdCI6MTcyNTQyMjg2MSwiZXhwIjoxNzI1NDI2NDYxLCJqdGkiOiJlYjM3MTI2NWMwMzExOTY5MWIxYzg5MDI2YmIxZmNmNGRkYzk4MjdjIn0.sv9npuJ7tj7scwIN_sft6gtHwSczlqaEKV0qUQI2LtPV_afTOmR9_84juXlTNgkECFVfsK-VSQyJzyHUtScg0jeA5G1tcy1Psha8ynEC1qBtGc309Q1T2g5GTkNrAfnssXTcnuK-cZGKh7JBhz4E3BfrG2D8pI56512ciCmKUQHKXLTgsfA5U0Iy3u2ocYxQADPK7un06vbwNiYhwOnjjXKnp8tu0OnmMcvE-lqm9Q1naVahevFVq4lTBGisjlCWzUXbMgevq5KAPH7BsHwbhone8FBlLKqCJJex4T9NuiJyxfTA_UqrGrI4ZC9Kc4bPfa3ih7somdVTUvSgXnvOHA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/auth/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "login",
+						"value": "v4.public.eyJhbGlhcyI6IkFobWFkIFJpZmtpIEF5YWxhIiwiZXhwIjoiMjAyNC0wOS0wN1QwOTowMzoxMSswNzowMCIsImlhdCI6IjIwMjQtMDktMDZUMTU6MDM6MTErMDc6MDAiLCJpZCI6IjYyODIxODQ5NTI1ODIiLCJuYmYiOiIyMDI0LTA5LTA2VDE1OjAzOjExKzA3OjAwIn0-QENh2ESNvhp9BZ3kcbkl9ZtNBLq8vsKoLe33ie3LQzj5TBIKJGC3jxcCfEcc-h2-uFNynL05_QPja6zJwAcI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://ira.ulbi.ac.id/data/karyawan",
+					"protocol": "https",
+					"host": [
+						"ira",
+						"ulbi",
+						"ac",
+						"id"
+					],
+					"path": [
+						"data",
+						"karyawan"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

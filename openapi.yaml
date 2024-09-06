@@ -1,0 +1,42 @@
+openapi: 3.0.0
+info:
+  title: backen dti ulbi
+  version: 1.0.0
+servers:
+  - url: https://ira.ulbi.ac.id
+paths:
+  /auth/users:
+    post:
+      tags:
+        - default
+      summary: New Request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                token: >-
+                  eyJhbGciOiJSUzI1NiIsImtpZCI6ImIyZjgwYzYzNDYwMGVkMTMwNzIxMDFhOGI0MjIwNDQzNDMzZGIyODIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyMzk3MTM3NTU0MDItNGhyMmN2YTM3N200M3JzcXMyZGswYzdmN2NrdGZlcGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyMzk3MTM3NTU0MDItNGhyMmN2YTM3N200M3JzcXMyZGswYzdmN2NrdGZlcGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDg4NTI0NTg3NjI5MTM4MjY5MDciLCJlbWFpbCI6ImF5YWxhcmlma2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5iZiI6MTcyNTQyMjU2MSwibmFtZSI6ImFobWFkIHJpZmtpIGF5YWxhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0tPT3VoYS1mdkgzbnE1TDhteHF5VkpMSzZiT1N1cV9BRkdFb3Uyd0FTUFBjekg3djBFPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6ImFobWFkIHJpZmtpIiwiZmFtaWx5X25hbWUiOiJheWFsYSIsImlhdCI6MTcyNTQyMjg2MSwiZXhwIjoxNzI1NDI2NDYxLCJqdGkiOiJlYjM3MTI2NWMwMzExOTY5MWIxYzg5MDI2YmIxZmNmNGRkYzk4MjdjIn0.sv9npuJ7tj7scwIN_sft6gtHwSczlqaEKV0qUQI2LtPV_afTOmR9_84juXlTNgkECFVfsK-VSQyJzyHUtScg0jeA5G1tcy1Psha8ynEC1qBtGc309Q1T2g5GTkNrAfnssXTcnuK-cZGKh7JBhz4E3BfrG2D8pI56512ciCmKUQHKXLTgsfA5U0Iy3u2ocYxQADPK7un06vbwNiYhwOnjjXKnp8tu0OnmMcvE-lqm9Q1naVahevFVq4lTBGisjlCWzUXbMgevq5KAPH7BsHwbhone8FBlLKqCJJex4T9NuiJyxfTA_UqrGrI4ZC9Kc4bPfa3ih7somdVTUvSgXnvOHA
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /data/karyawan:
+    get:
+      tags:
+        - default
+      summary: New Request
+      parameters:
+        - name: login
+          in: header
+          schema:
+            type: string
+          example: >-
+            v4.public.eyJhbGlhcyI6IkFobWFkIFJpZmtpIEF5YWxhIiwiZXhwIjoiMjAyNC0wOS0wN1QwOTowMzoxMSswNzowMCIsImlhdCI6IjIwMjQtMDktMDZUMTU6MDM6MTErMDc6MDAiLCJpZCI6IjYyODIxODQ5NTI1ODIiLCJuYmYiOiIyMDI0LTA5LTA2VDE1OjAzOjExKzA3OjAwIn0-QENh2ESNvhp9BZ3kcbkl9ZtNBLq8vsKoLe33ie3LQzj5TBIKJGC3jxcCfEcc-h2-uFNynL05_QPja6zJwAcI
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
